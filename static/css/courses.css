@@ -16,7 +16,7 @@
     margin-bottom: 10px;
   }
 
-  button {
+  .reg-btn {
     background-color: #3b270c; 
     color: #fffff0;
     border: none;
@@ -28,7 +28,7 @@
     transition: background-color 0.3s ease;
   }
 
-  .apply-btn:hover {
+  .reg-btn:hover {
     background-color: #8b5e3c;
   }
 

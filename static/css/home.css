@@ -81,8 +81,21 @@ img {
   padding-bottom: 2rem;
 }
 
-.card button {
-  background-color: #8b5e3c;
+.button {
+  background-color: #8b5e3c; 
+  color: #fffff0;
+  border: none;
+  text-decoration: none;
+  padding: 0.8rem 1.8rem;
+  font-size: 1.2rem;
+  font-family: Georgia, 'Times New Roman', serif; 
+  cursor: pointer;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #3b270c;
 }
 
 /* ------------- FOOTER ------------------- */
