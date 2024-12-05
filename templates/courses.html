@@ -1,0 +1,53 @@
+<div class="course">
+  <style>
+
+    .course {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #fff;
+      padding: 1.5rem;
+    }
+
+    .course-info {
+      text-align: left; 
+    }
+
+    .course h4 {
+      color: #808080; 
+      font-size: 1.3rem;
+      margin-bottom: 10px;
+    }
+
+    button {
+      background-color: #3b270c; 
+      color: #fffff0;
+      border: none;
+      padding: 0.8rem 1.8rem;
+      font-size: 1.2rem;
+      font-family: Georgia, 'Times New Roman', serif; 
+      cursor: pointer;
+      border-radius: 10px;
+      transition: background-color 0.3s ease;
+    }
+
+    .apply-btn:hover {
+      background-color: #8b5e3c;
+    }
+
+    .course-line {
+      display: block;
+      width: 100%;
+      height: 2px;
+      background-color: #ccc;
+    }
+  </style>
+  
+  <div class="course-info">
+    <h4>{{course['title']}}</h4>
+    <p><b>Duration:</b> {{course['duration']}}</p>
+    <p><b>Description:</b> {{course['description']}}</p>
+  </div>
+  <button>Register</button>
+</div>
+<span class="course-line"></span>

@@ -1,0 +1,209 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Georgia, 'Times New Roman', serif;
+}
+
+/* ------------- HEADER ------------------- */
+header {
+  background: linear-gradient(to bottom, #3b270c, #8b5e3c);
+  padding: 2rem;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+  font-size: 5rem;
+  color: #fffff0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+h3 {
+  font-size: 1rem;
+  color: #fffff0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* ------------- NAV ------------------- */
+.nav-sec {
+  position: relative;
+  height: 40rem;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.nav-bar {
+  background-color: rgba(169, 169, 169, 0.5);;
+  position: absolute;
+  height: 100%;
+  width: 10%;
+  top: 0;
+  left:0;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  font-size: 1.2vw; 
+}
+
+nav {
+  height: 60%; 
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+li {
+  color: #8b5e3c;
+  margin: 1.6rem;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+ 
+li a {
+  color: inherit;
+  text-decoration: none;
+}
+
+li:hover {
+  font-weight: bolder; 
+  font-size: 1.4em;
+}
+
+li a:hover {
+  color: #fffff0;
+}
+
+/* ------------- ABOUT ------------------- */
+
+.about-sec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: #f4f4f4;
+}
+
+.card {
+  margin: 5rem;
+  padding: 4rem;
+  border-radius: 10px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  width: 50%; 
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.card h2 {
+  color: #8b5e3c;
+}
+
+.card p {
+  color: #666666; 
+  padding: 0rem 2rem;
+  line-height: 1.6; 
+  text-align: justify;
+}
+
+/* ------------- COURSES ------------------- */
+
+.course-sec {
+  padding: 2rem;
+}
+
+.course-sec h2 {
+  text-align: center;
+  color: #3b270c ;
+  font-size: 2rem;
+}
+
+.course-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* ------------- CONTACT ------------------- */
+
+.contact-sec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: #f4f4f4;
+}
+
+.card p {
+  padding-bottom: 2rem;
+}
+
+.card button {
+  background-color: #8b5e3c;
+}
+
+/* ------------- FOOTER ------------------- */
+
+.footer {
+  background: linear-gradient(to top, #3b270c, #8b5e3c); 
+  color: #fffff0;
+  padding: 2rem 1rem;
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', serif;
+}
+
+.icons {
+  margin-bottom: 2rem;
+}
+
+.icons a {
+  margin: 0 0.5rem;
+  color: #fff; 
+  font-size: 1.5rem; 
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.icons a:hover {
+  color: #3b270c;
+}
+
+.links {
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  font-family: Georgia, 'Times New Roman', serif;
+}
+
+.links a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 0.5rem;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+.footer p {
+  font-size: 0.8rem;
+}
+
+#copyright {
+  font-size: 0.6rem;
+  vertical-align: super;
+  margin-left: 2px;
+}
+
+/* ------------- RESPONSIVE ------------------- */

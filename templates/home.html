@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Orient Homepage</title>
+  <link rel="stylesheet" href="static/css/home.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+</head>
+<body>
+  <header>
+    <h1>Orient</h1>
+    <h3>Your Learning Made Easier</h3>
+  </header>
+
+  <div class='nav-sec'>
+    <img src="https://4f7bbec3-4354-4c9a-a3d7-4bb442ba733c-00-16ol6ue17cled.sisko.replit.dev/static/images/banner.jpg" alt="banner">
+    <div class='nav-bar'>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <div class='about-sec'>
+    <div class='card'>
+      <h2>About Us</h2>
+      <p> Orient<span id="copyright">&copy;</span> is a simplified approach towards courses, lectures, or events and their management that allows the organizations to schedule their programs, and the users to apply for it. A systematic approach that can be used by educaters and students to manage their courses and events. This system can be implemented and integrated individually at organizational level, or as a whole system that can be used by the whole organization. </p>
+    </div>
+  </div>
+
+  <div class="course-sec">
+    <h2>Available Courses</h2>
+    <div class="course-card">
+      {% for course in courses %}
+        {% include 'courses.html' %}
+      {% endfor %}
+    </div>
+  </div>
+  
+  <div class='contact-sec'>
+    <div class='card'>
+      <h2>For more information:</h2>
+      <p>You may reach out to our team in case of any discrepancy. Our team is ready to assist you 24/7.</p>
+      <button>Contact Us</button>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="icons">
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+      <a href="#"><i class="fab fa-github"></i></a>
+    </div>
+    <div class="links">
+      <a href="#">Privacy Notice</a> |
+      <a href="#">Terms of Use</a> |
+      <a href="#">Do not use for commercial purposes</a> |
+      <a href="#">Cookie Preferences</a>
+    </div>
+    <p>
+      <span id="copyright">&copy;</span> 2024 Orient. All rights reserved.
+    </p>
+  </footer>
+  
+</body>
+  
+</html>
