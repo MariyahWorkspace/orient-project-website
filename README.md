@@ -1,2 +1,2 @@
 # orient-project-website
-A final project website for Lecture and Class Management submitted in completion of Web Frameworks Course under Anudip Foundation.
+A final project website for Lecture, Class, or Event Management submitted in completion of Web Frameworks Course under Anudip Foundation.
