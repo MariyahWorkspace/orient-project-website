@@ -7,3 +7,6 @@ Used 3rd party services like:
 4. https://mailtolink.me/
 5. https://planetscale.com/
 6. https://docs.sqlalchemy.org/en/20/dialects/mysql.html
+
+- SQL error command - pip install --upgrade mysql-connector-python
+- SQL hide data package - pip install python-dotenv
