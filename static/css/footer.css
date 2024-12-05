@@ -1,0 +1,43 @@
+.footer {
+  background: linear-gradient(to top, #3b270c, #8b5e3c); 
+  color: #fffff0;
+  padding: 2rem 1rem;
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', serif;
+}
+
+.icons {
+  margin-bottom: 2rem;
+}
+
+.icons a {
+  margin: 0 0.5rem;
+  color: #fff; 
+  font-size: 1.5rem; 
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.icons a:hover {
+  color: #3b270c;
+}
+
+.links {
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  font-family: Georgia, 'Times New Roman', serif;
+}
+
+.links a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 0.5rem;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+.footer p {
+  font-size: 0.8rem;
+}
