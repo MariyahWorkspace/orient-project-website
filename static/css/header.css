@@ -16,3 +16,8 @@ h3 {
   color: #fffff0;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
+
+#orient-link {
+  text-decoration: none;
+  color: inherit; /* Inherits the color from the parent element (or use a custom color) */
+}

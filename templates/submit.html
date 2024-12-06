@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Submitted</title>
+
+    <link rel="stylesheet" href="/static/css/footer.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Georgia, 'Times New Roman', serif;
+        }
+        h2 {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .application-details {
+            width: 50%;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 10rem;
+        }
+
+        .application-details h4 {
+            margin: 10px 0;
+        }
+
+        .application-details div {
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Your application has been submitted successfully!</h2>
+
+    <div class="application-details">
+        <h4>Full Name</h4>
+        <div>{{application['name']}}</div>
+
+        <h4>Email</h4>
+        <div>{{application['email']}}</div>
+
+        <h4>Phone</h4>
+        <div>{{application['phone']}}</div>
+
+        <h4>Motivation</h4>
+        <div>{{application['motivation']}}</div>
+    </div>
+
+    {% include 'footer.html'%}
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> {{course.get('title')}} Course </title>
+
+    <link rel="stylesheet" href="/static/css/header.css">
+    <link rel="stylesheet" href="/static/css/home.css">
+    <link rel="stylesheet" href="/static/css/course-page.css">
+    <link rel="stylesheet" href="/static/css/footer.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+</head>
+<body>
+    {% include 'header.html'%}
+
+    <div class="course-page">
+        {% if course.error %}
+            <h2 style="text-align: center;">{{ course.error }}</h2>
+        {% else %}
+            <h2>{{course.get('title')}} Course</h2>
+            <div class="course-details">    
+                <h4>{{course['title']}}</h4>
+                <p><b>Duration:</b> {{course['duration']}}</p>
+                <p><b>Author:</b> {{course['author']}}</p>
+                <p><b>Description:</b> {{course['description']}}</p>
+            </div>
+            <span class="course-line"></span>
+        {% endif %}
+    </div>
+
+    <div class="application">
+        <h4>Application Form</h4>
+        <form action="/courses/{{course['id']}}/apply" method="POST">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="John Doe" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="abc@example.com" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="text" id="phone" name="phone" placeholder="1234567890" required>
+
+            <label for="motivation">Why do you want to take this course?</label>
+            <textarea id="motivation" name="motivation" placeholder="Describe your participation" required></textarea>
+
+            <button type="submit" class="submit-btn">Submit Application</button>
+        </form>
+    </div>
+    {% include 'footer.html'%}
+</body>
+</html>

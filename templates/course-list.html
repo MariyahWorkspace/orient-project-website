@@ -3,7 +3,7 @@
     <h4>{{course['title']}}</h4>
     <p><b>Duration:</b> {{course['duration']}}</p>
     <p><b>Description:</b> {{course['description']}}</p>
-  </div>
-  <button class='reg-btn'>Register</button>
+  </div> 
+  <a href="{{ url_for('show_course', id=course['id']) }}" class="apply-btn">Apply</a>
 </div>
 <span class="course-line"></span>

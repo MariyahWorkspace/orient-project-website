@@ -6,12 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <title>Orient Homepage</title>
-  
+
   <link rel="stylesheet" href="/static/css/home.css">
-  <link rel="stylesheet" href="static/css/header.css">
-  <link rel="stylesheet" href="static/css/nav.css">
-  <link rel="stylesheet" href="static/css/courses.css">
-  <link rel="stylesheet" href="static/css/footer.css">
+  <link rel="stylesheet" href="/static/css/header.css">
+  <link rel="stylesheet" href="/static/css/nav.css">
+  <link rel="stylesheet" href="/static/css/course-list.css">
+  <link rel="stylesheet" href="/static/css/footer.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 </head>
 <body>
@@ -32,7 +32,7 @@
     <h2>Available Courses</h2>
     <div class="course-card">
       {% for course in courses %}
-        {% include 'courses.html' %}
+        {% include 'course-list.html' %}
       {% endfor %}
     </div>
   </div>
