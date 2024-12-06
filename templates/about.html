@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>About Us</title>
+
+    <link rel="stylesheet" href="/static/css/about.css">
+    <link rel="stylesheet" href="/static/css/home.css">
+    <link rel="stylesheet" href="static/css/header.css">
+    <link rel="stylesheet" href="static/css/nav.css">
+    <link rel="stylesheet" href="static/css/footer.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    
+    {% include 'header.html'%}
+    <div class='nav-sec'>
+        <div class='about-sec'>
+            <div class='card'>
+                <h2>About Us</h2>
+                <p> Orient<span id="copyright">&copy;</span> is a simplified approach towards courses, lectures, or events and their management that allows the organizations to schedule their programs, and the users to apply for it. A systematic approach that can be used by educaters and students to manage their courses and events. This system can be implemented and integrated individually at organizational level, or as a whole system that can be used by the whole organization. </p>
+                <p>We, the 'No Brain Cells' (DevTeam) is undoubtedly a keen group that's primarily interested in trying out new things. Henceforth, we are trying to step up towards benevolent causes that could change the world for the better, just like Batman is good for the world. We believe in delivering a 'change.' As someone great used to say, "If you want to make enemies, try to change something," and oh do we love making enemies. Diabolical, innit?</p>
+            </div>
+        </div>
+        {% include 'nav.html'%}
+    </div>
+
+    <div class="team-sec">
+        <h2>Our Team</h2>
+        <div class='team-container'>
+            <div class='team-card'>
+                <img src="../static/images/profile.jpg" alt="profile">
+                <h3>Mariya Dhanse</h3>
+                <p>Full Stack Developer</p>
+                <p> "I am Mariya Dhanse, a part of the team 'No Brain Cells' who has had the opportunity to develop this project individually. Delving into new techologies is definitely my cup of tea, guess who came up with the group name? FED, Data Science, Documentation - my space." </p>
+            </div>
+            <div class='team-card'>
+                <img src="../static/images/profile2.png" alt="profile">
+                <h3>John Doe</h3>
+                <p>Web Developer</p>                
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam eius, quis veniam vero cumque natus, eveniet nemo pariatur temporibus quidem voluptatem, ipsa delectus. Quia alias asperiores commodi odit optio culpa! </p>
+            </div>
+        </div>     
+    </div>
+
+    {% include 'footer.html'%}
+</body>
+</html>
